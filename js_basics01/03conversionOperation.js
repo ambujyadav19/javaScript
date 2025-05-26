@@ -26,5 +26,37 @@ let booleanIsLoggedIn=Boolean(isLoggedIn)
 let somenumber=33
 
 let stringnumber=String(somenumber)
-console.log(stringnumber)
-console.log(typeof stringnumber)
+// console.log(stringnumber)
+// console.log(typeof stringnumber)
+
+
+
+
+////*******oprations *******/////
+
+let value=3
+let negValue=-value
+// console.log(negValue);
+
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2**2);
+// console.log(2/3);
+// console.log(2%3);
+
+
+let str1="hello"
+let str2="ambuj"
+//  console.log(str1+str2)
+
+//  console.log("1"+2);
+//  console.log(1+"2");
+//  console.log("1"+2+2);
+//  console.log(1+2+"2");
+
+ console.log(+true)
+
+ let gamecounter=100;
+ ++gamecounter;
+ console.log(gamecounter);
