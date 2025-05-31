@@ -29,3 +29,25 @@ const myFunction=function(){
 }
 
 console.log(typeof myObj)
+
+
+//++++++++++++++++++++
+//Stack(primitive)=>copy of original memory , Heap(non primitive)=> reference of originam memory
+
+let vill_name="rampur"
+let another ="barauli"
+
+another ="ballia"
+
+console.log(another)
+console.log(vill_name)
+
+let userOne={
+    email:"yser@google.com",
+    upi:"67574324@abl"
+}
+ usertwo=userOne
+ usertwo.email="ambuj@google.com"
+
+console.log(userOne)
+console.log(usertwo)
