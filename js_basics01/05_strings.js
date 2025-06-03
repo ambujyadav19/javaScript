@@ -5,7 +5,7 @@
 
 console.log(`hello my name is ${name} and my repo count is ${repoCount}`);
 
-const gameName=new String('ambujydv')
+const gameName=new String('ambuj-ydv')
 
 console.log(gameName[0])
 console.log(gameName.__proto__)
@@ -21,3 +21,16 @@ console.log(newString);
 
 const anotherString=gameName.slice(-7,4)
 console.log(anotherString);
+
+const newStringOne="   Ambuj "
+console.log(newStringOne)
+console.log(newStringOne.trim()
+)
+
+const url="https://ambuj.com/aryan%20yadav"
+
+console.log(url.replace('%20','-'))
+
+console.log(url.includes('ambuj'))
+
+console.log(gameName.split('-'))
