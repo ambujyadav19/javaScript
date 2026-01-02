@@ -14,15 +14,16 @@ let isloggedIn=true
 //bigint
 ///string=>""
 //boolean=>true/false
-//null=>is a stsndalone value,null is a object itself.
+//null=>is a stsndalone value,
+// "null is a object itself."
 
 let a=null
-//undefined=>
-//symbol=>unique
+//undefined=>value is not defined 
+//symbol=>used for defined uniqueness
 
 
 //object
 
-
+console.log(name)
 console.log(typeof undefined)//undefined
 console.log(typeof null)//object
