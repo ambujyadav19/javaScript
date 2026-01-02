@@ -6,9 +6,12 @@
 console.log(`hello my name is ${name} and my repo count is ${repoCount}`);
 
 const gameName=new String('ambuj-ydv')
+//it is a string object not an primitive string
 
 console.log(gameName[0])
 console.log(gameName.__proto__)
+
+//These are different methods associated with string object gameName.
 
 // console.log(gameName.length);
 // console.log(gameName.toUpperCase());
