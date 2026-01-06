@@ -72,3 +72,19 @@ form.addEventListener('submit',function (e){
 
 });
 ```
+
+Project 03-Digital Clock
+
+Project 03 Solution
+
+```javascript
+const clock = document.querySelector('#clock')
+
+
+// setInterval take value in mili seconds
+setInterval(function(){
+  let date = new Date();
+  clock.innerHTML=date.toLocaleTimeString();
+
+},1000)
+```
