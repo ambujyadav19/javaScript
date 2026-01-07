@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121">
+    <div>
+        <h1 style="color:white">Card of Github User</h1>
+        <div style="background-color: aqua;">
+            <img id="myImage" src="" class="circle-img">
+        </div>
+        <div class="numfollowers" style="background-color:red; color:green">
+            
+        </div>
+
+    </div>
+    
+</body>
+<script>
+    const requestUrl='https://api.github.com/users/ambujyadav19'
+    const xhr= new  XMLHttpRequest();
+    xhr.open('GET',requestUrl)
+    xhr.onreadystatechange=function(){
+    console.log(xhr.readyState);
+    const image=document.querySelector('#myImage')
+    const follow=document.querySelector('.numfollowers')
+
+    if(xhr.readyState===4){
+        const data=JSON.parse(this.responseText)
+        console.log(data)
+        console.log(typeof data)
+        console.log(data.followers);
+        image.src=data.avatar_url;
+        follow.innerHTML=`No of followers: ${data.followers}`
+
+    }       
+    }
+    xhr.send()
+
+</script>
+</html>
