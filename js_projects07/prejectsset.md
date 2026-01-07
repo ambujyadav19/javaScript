@@ -197,8 +197,37 @@ function newGame(){
   })
 }
 
+```
 
+Project 06-Unlimited Colors
+project 06 Solution
 
+```javascript
+// generate a random color
+const  randomcolor= function(){
+  const hex="0123456789ABCDEF"
+  let color='#'
+  for(let i=0;i<6;i++){
+      color+=hex[Math.floor(Math.random()*16)]
+  }
+  return color;
+}
 
+let intervalID;
+const startChangingColor = function(){
 
+  if(!intervalID){
+    intervalID = setInterval(changeBGcolor,1000)
+  }
+ function changeBGcolor(){
+  document.body.style.backgroundColor=randomcolor();
+ }
+};
+const stopChangingColor = function(){
+   clearInterval(intervalID);
+   intervalID=null;
+};
+
+document.querySelector('#start').addEventListener('click',startChangingColor);
+document.querySelector('#stop').addEventListener('click',stopChangingColor);
 ```
